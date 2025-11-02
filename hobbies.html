@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Hobbies | Alya Nabilah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="hobbies.html" class="active">Hobbies</a></li>
+      <li><a href="campuslife.html">Campus Life</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="Bob1.jpg" alt="Alya's Cat" class="header-img header-hobbies">
+    <div class="welcome-text" style="opacity: 0.7;">My Hobbies | <br> Drawing</div>
+  </header>
+
+  <section class="hobbies">
+    <h2>I Love Drawing 🎨</h2>
+    <p class="intro">
+      Drawing is one of my favorite ways to express creativity. 
+      I enjoy creating portraits, landscapes, and digital illustrations in my free time. 
+      Here are a few of my artworks that I’m proud of!
+    </p>
+
+    <div class="gallery">
+      <div class="art-item">
+        <img src="art1.jpg" alt="My Sister" onclick="openPopup(this)">
+        <p class="caption">My Sister with Her 4 Cats</p>
+      </div>
+      <div class="art-item">
+        <img src="art2.jpg" alt="My Brother" onclick="openPopup(this)">
+        <p class="caption">My Brother's Family</p>
+      </div>
+      <div class="art-item">
+        <img src="art3.jpg" alt="Caelus HSR FanArt" onclick="openPopup(this)">
+        <p class="caption">My Favourite Game's Character</p>
+      </div>
+      <div class="art-item">
+        <img src="art4.jpg" alt="Vantacrow Bringer FanArt" onclick="openPopup(this)">
+        <p class="caption">My Favourite VTuber</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="popup" class="popup" onclick="closePopup()">
+    <img id="popup-img" src="" alt="">
+  </div>
+
+  <footer style="text-align: center;">
+    <p>&copy; 2025 Alya Nabilah | BIC21203 Web Development</p>
+  </footer>
+
+  <script>
+    function openPopup(image) {
+      document.getElementById("popup-img").src = image.src;
+      document.getElementById("popup").style.display = "flex";
+    }
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

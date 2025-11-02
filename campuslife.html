@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Campus Life | Alya Nabilah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="campuslife.html" class="active">Campus Life</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="Bob2.jpg" alt="Alya's Cat" class="header-img header-campus">
+    <div class="welcome-text" style="opacity: 0.7;">Campus Life | <br> Diploma & Degree</div>
+  </header>
+
+  <section class="campuslife">
+    <h2>My Campus Journey 🎓</h2>
+    <p class="intro">
+      Throughout my university journey, I’ve had countless memorable experiences 
+      that shaped who I am today. From my Diploma days at <b>Universiti Malaysia Pahang (UMP)</b> 
+      to my current Degree studies at <b>Universiti Tun Hussein Onn Malaysia (UTHM)</b>, 
+      every moment has taught me teamwork, leadership, and self-growth.
+    </p>
+
+    <div class="campus-section">
+      <h3>🎯 Diploma Life at Universiti Malaysia Pahang</h3>
+      <p class="campus-text">
+        During my Diploma, I actively joined various co-curricular activities and events. 
+        These moments not only helped me grow socially but also taught me discipline, teamwork, and perseverance.
+      </p>
+
+      <div class="gallery">
+        <div class="art-item">
+          <img src="archery.jpg" alt="Archery at UMP" onclick="openPopup(this)">
+          <p class="caption">Archery Training</p>
+        </div>
+        <div class="art-item">
+          <img src="neonrun.jpg" alt="Neon Run at UMP" onclick="openPopup(this)">
+          <p class="caption">Neon Run</p>
+        </div>
+        <div class="art-item">
+          <img src="kayak.jpg" alt="Kayaking Activity" onclick="openPopup(this)">
+          <p class="caption">Kayaking Session</p>
+        </div>
+        <div class="art-item">
+          <img src="volunteer.jpg" alt="Volunteer at Rumah Anak Yatim Mukhtar Ahang" onclick="openPopup(this)">
+          <p class="caption">Volunteer at Rumah Anak Yatim Mukhtar Ahang (YOSH MyFundAction)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="campus-section">
+      <h3>🎓 Degree Life at Universiti Tun Hussein Onn Malaysia</h3>
+      <p class="campus-text">
+        Currently pursuing my Bachelor of Computer Science (Software Engineering), 
+        my Degree life has been full of excitement and learning. I participated in various events, 
+        leadership roles, and competitions that made my campus experience truly unforgettable.
+      </p>
+
+      <div class="gallery">
+        <div class="art-item">
+          <img src="batik.jpg" alt="Canting Batik Competition" onclick="openPopup(this)">
+          <p class="caption">Canting Batik (1st Place)</p>
+        </div>
+        <div class="art-item">
+          <img src="abseiling.jpg" alt="Abseiling Activity" onclick="openPopup(this)">
+          <p class="caption">Abseiling during Program PEWARIS</p>
+        </div>
+        <div class="art-item">
+          <img src="festkon.jpg" alt="FESTKON 24/25 Event" onclick="openPopup(this)">
+          <p class="caption">AJK Kebersihan dan Pengangkutan - FESTKON 24/25</p>
+        </div>
+        <div class="art-item">
+          <img src="prs.jpg" alt="Kokurikulum PRS" onclick="openPopup(this)">
+          <p class="caption">Joining Kokurikulum as PRS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="popup" class="popup" onclick="closePopup()">
+    <img id="popup-img" src="" alt="">
+  </div>
+
+  <footer style="text-align: center;">
+    <p>&copy; 2025 Alya Nabilah | BIC21203 Web Development</p>
+  </footer>
+
+  <script>
+    function openPopup(image) {
+      document.getElementById("popup-img").src = image.src;
+      document.getElementById("popup").style.display = "flex";
+    }
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
